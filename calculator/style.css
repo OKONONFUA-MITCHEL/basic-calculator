@@ -1,0 +1,101 @@
+/* general styling */
+body{
+     background-color: #abc;
+     height: 100vh;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     margin-top: 10%;
+     margin-left: 30%;
+}
+
+button {
+     background-color: #123;
+     border: none;
+     border-radius: 6px;
+     font-size: 1rem;
+     cursor: pointer;
+     color: gold;
+     box-shadow: 0 0 10px 1px #abc;
+     padding: 1rem 0.5rem;
+     margin: 1rem 0;
+}
+
+/* body */
+
+#body div{
+     display: grid;
+     margin:  0 1rem;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-column-gap: 1rem;
+     
+}
+
+#body #output {
+     background-color: #abc;
+     height: 50px;
+     border: white solid 2px;
+     margin-top: 1rem;
+     margin-bottom: 0;
+     font-size: 1.3rem;
+}
+
+#body {
+     background-color: #123;
+     padding-top: 20px;
+     width: 700px;
+     height: 564px;
+     color: white;
+     animation: spin 4s infinite;
+     border-radius: 20px;
+}
+
+#body button.special{
+     color: #abc;
+}
+
+
+#answer {
+     margin: 0;
+     margin-bottom: 10px;
+     height: 50px;
+     text-align: right;
+     justify-content: left;
+     color: white;
+     font-size: 1.5rem;
+     background-color: red;
+     border: white 2px solid;
+}
+
+/* key frames */
+@keyframes spin {
+     0% {
+         border-bottom: 5px solid gold;
+         border-left: 5px solid #abc;
+         border-right: 5px solid #abc;
+         border-top: 5px solid #abc;
+      }
+
+     25% {
+          border-bottom: 5px solid #abc;
+         border-left: 5px solid gold;
+    }
+
+    50% {
+          border-bottom: 5px solid #abc;
+          border-left: 5px solid #abc;
+         border-top: 5px solid gold;
+    }
+
+    75% {
+         border-bottom: 5px solid #abc;
+         border-left: 5px solid #abc;
+         border-right: 5px solid gold;
+         border-top: 5px solid #abc;
+    }
+
+    100% {
+         border-left: 5px solid #abc;
+         border-bottom: 5px solid gold;
+         border-right: 5px solid #abc;
+         border-top: 5px solid #abc;
+     }
+}

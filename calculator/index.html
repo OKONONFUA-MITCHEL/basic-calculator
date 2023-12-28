@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Calculator</title>
+</head>
+<body>
+     <div id="body">
+          <div id="output">
+          </div>
+          <div id="answer"></div>
+          <div>
+               <button  onclick=" output.innerText = ''; answer.innerText = '' " class="special">AC</button>
+               <button  onclick=" output.innerText = output.innerText.toString().slice(0,-1) " class="special">DE</button>
+               <button  onclick=" output.innerText += '.' " class="special">.</button>
+               <button  onclick=" output.innerText += '/' " class="special">/</button>
+          </div>
+          
+          <div>
+               <button onclick=" output.innerText += '1' " >1</button>
+               <button onclick=" output.innerText += '2' ">2</button>
+               <button onclick=" output.innerText += '3' ">3</button>
+               <button  onclick=" output.innerText += '+' " class="special">+</button>
+          </div> 
+          
+          <div>
+               <button onclick=" output.innerText += '4' ">4</button>
+               <button onclick=" output.innerText += '5' ">5</button>
+               <button onclick=" output.innerText += '6' ">6</button>
+               <button  onclick=" output.innerText += '-' " class="special">-</button>
+          </div>
+
+          <div>
+               <button onclick=" output.innerText += '7' ">7</button>
+               <button onclick=" output.innerText += '8' ">8</button>
+               <button onclick=" output.innerText += '9' ">9</button>
+               <button  onclick=" output.innerText += '*' " class="special">*</button>
+          </div>
+           <div id="last">
+               <button onclick=" output.innerText += '0' ">0</button>
+               <button onclick=" output.innerText += '00' ">00</button>
+               <button onclick=" output.innerText += answer.innerText ">ANS</button>
+               <button onclick=" answer.innerText= eval(output.innerText); output.innerText = '' " class="special">=</button>
+          </div>
+     </div>
+</body>
+</html>
