@@ -5,7 +5,7 @@ body{
      font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*button {
+button { 
      background-color: #123;
      border: none;
      border-radius: 6px;
@@ -13,8 +13,9 @@ body{
      cursor: pointer;
      color: gold;
      box-shadow: 0 0 6px 1px #ADD8E6;
+     padding: 1rem 0;
      margin: 1rem 0;
-}*/
+}
 
 /* body */
 
