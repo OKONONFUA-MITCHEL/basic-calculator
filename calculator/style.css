@@ -12,8 +12,8 @@ button {
      font-size: 1rem;
      cursor: pointer;
      color: gold;
-     box-shadow: 0 0 10px 1px #ADD8E6;
-     padding: 1rem 0.5rem;
+     box-shadow: 0 0 6px 1px #ADD8E6;
+     padding: 1rem 0rem;
      margin: 1rem 0;
 }
 
@@ -21,7 +21,7 @@ button {
 
 #body div{
      display: grid;
-     margin:  0 0.2rem;
+     margin:  0 0.5rem;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-column-gap: 1rem;
      
